@@ -3,16 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@tailwindcss/cli": "^4.0.5",
     "cors": "^2.8.5",
     "cra-template": "1.2.0",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "path": "^0.12.7",
+    "postcss": "^8.5.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-router": "^7.1.5",
     "react-scripts": "5.0.1",
-    "tailwindcss": "^4.0.3"
+    "tailwindcss": "^4.0.5"
   },
   "scripts": {
+    "prestart": "bunx @tailwindcss/cli -i src/index.css -o src/app/dashboard.css",
     "server": "node -r dotenv/config src/server/index.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -32,7 +38,7 @@
     ]
   },
   "devDependencies": {
-    "web-vitals": "^4.2.4",
-    "dotenv": "^16.4.7"
+    "autoprefixer": "^10.4.20",
+    "web-vitals": "^4.2.4"
   }
 }
