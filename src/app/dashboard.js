@@ -1,5 +1,4 @@
-import '../index.css';
-import './dashboard.css';
+import '../tailwind.css';
 import React, {useState} from 'react';
 
 export default function Dashboard() {

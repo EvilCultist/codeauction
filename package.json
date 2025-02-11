@@ -18,7 +18,7 @@
     "tailwindcss": "^4.0.5"
   },
   "scripts": {
-    "prestart": "bunx @tailwindcss/cli -i src/index.css -o src/app/dashboard.css",
+    "prestart": "bunx @tailwindcss/cli -i src/index.css -o src/tailwind.css",
     "server": "node -r dotenv/config src/server/index.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
